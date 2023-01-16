@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Romanian Engineering",
+  "description": "^",
+  "version": "1.0.0",
+  "author": "Cristi Macovei",
+  "host_permissions": ["https://*.geogra.ro/*"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://geogra.ro/ro/jocuri-geografice/europa/statele-europei/*"
+      ],
+      "js": ["fg-scripts/countries.js"]
+    }
+  ]
+}
